@@ -50,7 +50,8 @@ public class CosmosDBConfig extends AbstractCosmosConfiguration {
     }
 }
 #else
-
+// Placeholder configuration class to ensure Maven compilation when Cosmos is not selected.
+// The entire Cosmos folder, including this file, is removed when Manifold is used.
 @Configuration
 public class CosmosDBConfig {}
 

@@ -15,6 +15,8 @@ public interface StacksDynamoDBRepository<T>
         CrudRepository<T, String>,
         PagingAndSortingRepository<T, String> {}
 #else
+// Placeholder repository interface to ensure Maven compilation when Dynamo is not selected.
+// The entire Dynamo folder, including this file, is removed when Manifold is used.
 @NoRepositoryBean
 public interface StacksDynamoDBRepository<T> extends StacksPersistence<T> {
 }
