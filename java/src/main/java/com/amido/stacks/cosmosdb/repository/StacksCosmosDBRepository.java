@@ -13,7 +13,7 @@ public interface StacksCosmosDBRepository<T>
         extends StacksPersistence<T>, CrudRepository<T, String>, CosmosRepository<T, String> {}
 #else
 // Placeholder repository interface to ensure Maven compilation when Cosmos is not selected.
-// The entire Cosmos folder, including this file, is removed when Manifold is used.
+// The entire Cosmos folder, including this file, is filtered out with project-builder-config.
 @NoRepositoryBean
 public interface StacksCosmosDBRepository<T> extends StacksPersistence<T> {
 }

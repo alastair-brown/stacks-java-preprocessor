@@ -44,7 +44,7 @@ public class DynamoDBConfig {
 }
 #else
 // Placeholder configuration class to ensure Maven compilation when Dynamo is not selected.
-// The entire Dynamo folder, including this file, is removed when Manifold is used.
+// The entire Dynamo folder, including this file, is filtered out with project-builder-config.
 @Configuration
 public class DynamoDBConfig {}
 #endif
