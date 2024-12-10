@@ -2,7 +2,19 @@
   "coreIncludes": [
     "com/amido/stacks/workloads"
   ],
-  "profileFilters": [],
+  "profileFilters": [
+    {
+      "id": "aws",
+      "packages" : [
+        "com/amido/stacks/aws"
+      ],
+      "propertiesFile": "application-aws.yml"
+    },
+    {
+      "id": "azure",
+      "propertiesFile": "application-azure.yml"
+    }
+  ],
   "excludedGroupIds": [
     "systems.manifold",
     "com.github.spullara.mustache.java",
