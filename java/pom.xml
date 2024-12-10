@@ -427,6 +427,7 @@
             <arg>-Amanifold.source.target=${prop.output.dir}</arg>
             <arg>${prop.aws}</arg>
             <arg>${prop.azure}</arg>
+            <arg>${prop.dynamodb}</arg>
           </compilerArgs>
           <!-- Add the processor path for the plugin -->
           <annotationProcessorPaths>
