@@ -34,11 +34,32 @@
   <dependencyManagement>
     <dependencies>
     {{> core/coreManagedDependencies}}
+
+    {{#aws}}
+        {{> aws/awsManagedDependencies}}
+    {{/aws}}
     </dependencies>
   </dependencyManagement>
 
+
   <dependencies>
     {{> core/coreDependencies}}
+
+    {{#aws}}
+        {{> aws/awsDependencies}}
+    {{/aws}}
+
+    {{#azure}}
+        {{> azure/azureDependencies}}
+    {{/azure}}
+
+    {{#dynamodb}}
+        {{> dynamodb/dynamodbDependencies}}
+    {{/dynamodb}}
+
+    {{#cosmosdb}}
+        {{> cosmosdb/cosmosdbDependencies}}
+    {{/cosmosdb}}
   </dependencies>
 
   <build>

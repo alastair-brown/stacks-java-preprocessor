@@ -47,16 +47,16 @@
     <spring.data.commons.version>3.4.0</spring.data.commons.version>
     <owasp-dependency-check-plugin.version>11.1.0</owasp-dependency-check-plugin.version>
     <junit-jupiter.version>5.11.3</junit-jupiter.version>
-    <azure-spring-cosmos.version>5.6.0</azure-spring-cosmos.version>
-    <spring.data.dynamodb.version>5.2.5</spring.data.dynamodb.version>
 
-    <spring.cloud.starter.aws.secrets.manager.config.version>2.4.4</spring.cloud.starter.aws.secrets.manager.config.version>
-    <aws-java-sdk.version>1.12.579</aws-java-sdk.version>
-    <aws-xray-recorder-sdk.version>2.14.0</aws-xray-recorder-sdk.version>
-    <tomcat-embed.version>10.1.15</tomcat-embed.version>
+    <spring.data.dynamodb.version>5.2.5</spring.data.dynamodb.version>
 
     <manifold.version>2024.1.38</manifold.version>
     <fmt-maven-plugin.version>2.25</fmt-maven-plugin.version>
+
+    <spring.cloud.starter.aws.secrets.manager.config.version>2.4.4
+    </spring.cloud.starter.aws.secrets.manager.config.version>
+    <aws-java-sdk.version>1.12.579</aws-java-sdk.version>
+    <aws-xray-recorder-sdk.version>2.14.0</aws-xray-recorder-sdk.version>
 
     <!-- Set 'pact.broker.url' and 'pact.broker.token' -->
     <pact.broker.url/>
@@ -545,6 +545,13 @@
       <properties>
         <prop.aws>-AUSE_AWS=</prop.aws>
         <aws.profile.name>aws</aws.profile.name>
+
+        <spring.cloud.starter.aws.secrets.manager.config.version>2.4.4
+        </spring.cloud.starter.aws.secrets.manager.config.version>
+        <aws-java-sdk.version>1.12.579</aws-java-sdk.version>
+        <aws-xray-recorder-sdk.version>2.14.0</aws-xray-recorder-sdk.version>
+        <tomcat-embed.version>10.1.15</tomcat-embed.version>
+
       </properties>
 
       <dependencies>
@@ -685,12 +692,14 @@
       <properties>
         <prop.cosmosdb>-AUSE_COSMOSDB=</prop.cosmosdb>
         <profile.cosmosdb>cosmosdb</profile.cosmosdb>
+
+        <azure-spring-data-cosmos.version>5.6.0</azure-spring-data-cosmos.version>
       </properties>
       <dependencies>
         <dependency>
           <groupId>com.azure</groupId>
           <artifactId>azure-spring-data-cosmos</artifactId>
-          <version>${azure-spring-cosmos.version}</version>
+          <version>${azure-spring-data-cosmos.version}</version>
         </dependency>
       </dependencies>
     </profile>
