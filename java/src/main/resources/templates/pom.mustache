@@ -34,7 +34,6 @@
   <dependencyManagement>
     <dependencies>
     {{> core/coreManagedDependencies}}
-
     {{#aws}}{{> aws/awsManagedDependencies}}{{/aws}}
     </dependencies>
   </dependencyManagement>
@@ -42,11 +41,9 @@
 
   <dependencies>
     {{> core/coreDependencies}}
-
     {{#aws}}{{> aws/awsDependencies}}{{/aws}}
-
+    {{#servicebus}}{{> azure/azureServicebusDependencies}}{{/servicebus}}
     {{#dynamodb}}{{> dynamodb/dynamodbDependencies}}{{/dynamodb}}
-
     {{#cosmosdb}}{{> cosmosdb/cosmosdbDependencies}}{{/cosmosdb}}
   </dependencies>
 
