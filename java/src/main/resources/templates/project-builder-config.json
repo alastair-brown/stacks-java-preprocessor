@@ -37,12 +37,6 @@
     {
       "id": "azure",
       "propertiesFile": "application-azure.yml"
-    },
-    {
-      "id": "servicebus",
-      "includes" : [
-        "**/com/amido/stacks/azure/**/*.java"
-      ]
     }
   ],
   "excludedGroupIds": [
