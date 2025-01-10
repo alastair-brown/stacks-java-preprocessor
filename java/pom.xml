@@ -32,9 +32,6 @@
     <prop.dynamodb></prop.dynamodb>
     <profile.dynamodb.name></profile.dynamodb.name>
 
-    <prop.azure.servicebus></prop.azure.servicebus>
-    <profile.azure.servicebus.name></profile.azure.servicebus.name>
-
     <applicationinsights.version>2.6.4</applicationinsights.version>
     <azure.springboot.version>4.0.0</azure.springboot.version>
     <au.com.dius.pact-jvm-provider-spring.version>4.0.10</au.com.dius.pact-jvm-provider-spring.version>
@@ -55,8 +52,6 @@
 
     <manifold.version>2024.1.38</manifold.version>
     <fmt-maven-plugin.version>2.25</fmt-maven-plugin.version>
-
-    <com.azure.azure-messaging-servicebus.version>7.17.7</com.azure.azure-messaging-servicebus.version>
 
     <!-- Set 'pact.broker.url' and 'pact.broker.token' -->
     <pact.broker.url/>
@@ -712,21 +707,6 @@
           <groupId>io.github.boostchicken</groupId>
           <artifactId>spring-data-dynamodb</artifactId>
           <version>${spring.data.dynamodb.version}</version>
-        </dependency>
-      </dependencies>
-    </profile>
-
-    <profile>
-      <id>servicebus</id>
-      <properties>
-        <prop.azure.servicebus>-AUSE_SERVICEBUS=</prop.azure.servicebus>
-        <profile.azure.servicebus.name>servicebus</profile.azure.servicebus.name>
-      </properties>
-      <dependencies>
-        <dependency>
-          <groupId>com.azure</groupId>
-          <artifactId>azure-messaging-servicebus</artifactId>
-          <version>${com.azure.azure-messaging-servicebus.version}</version>
         </dependency>
       </dependencies>
     </profile>
